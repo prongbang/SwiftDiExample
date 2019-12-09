@@ -1,0 +1,6 @@
+framework module Pods_SwiftDiExample {
+  umbrella header "Pods-SwiftDiExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
