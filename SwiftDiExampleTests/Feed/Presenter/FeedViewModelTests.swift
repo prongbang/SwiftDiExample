@@ -24,7 +24,7 @@ class FeedViewModelTests: XCTestCase {
         // Then
         XCTAssert(waitForPromises(timeout: 10))
         XCTAssertEqual(self.feedViewModel?.feedList.count, 1)
-        XCTAssertFalse(self.feedViewModel.isError ?? false)
+        XCTAssertFalse(self.feedViewModel?.isError ?? false)
     }
 
 }

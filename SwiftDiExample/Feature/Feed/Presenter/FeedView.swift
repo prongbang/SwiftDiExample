@@ -17,12 +17,9 @@ struct FeedView: View {
     var body: some View {
         NavigationView {
             List(self.viewModel.feedList) { item in
-                VStack {
-                    Text(item.title)
-                    Text(item.desc)
-                }
+                CardView(feed: item)
             }
-            .navigationBarTitle("Feed")
+            .navigationBarTitle("เดฟไปวัน ๆ")
         }
         .onAppear {
             self.viewModel.getFeedList()

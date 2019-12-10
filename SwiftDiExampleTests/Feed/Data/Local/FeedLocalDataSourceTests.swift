@@ -26,7 +26,7 @@ class FeedLocalDataSourceTests: XCTestCase {
         
         // Then
         XCTAssert(waitForPromises(timeout: 10))
-        XCTAssertEqual(promise?.value?.count, 20)
+        XCTAssertEqual(promise?.value?.count, 10)
         XCTAssertNil(promise?.error)
     }
 }

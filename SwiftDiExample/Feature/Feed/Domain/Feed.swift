@@ -12,4 +12,7 @@ struct Feed: Codable, Identifiable {
     let id: Int
     let title: String
     let desc: String
+    var image: String = ""
+    var category: String = ""
+    var author: String = ""
 }
