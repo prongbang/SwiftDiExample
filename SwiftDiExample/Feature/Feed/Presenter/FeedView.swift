@@ -19,6 +19,7 @@ struct FeedView: View {
             List(self.viewModel.feedList) { item in
                 CardView(feed: item)
             }
+            .listSeparatorStyleNone()
             .navigationBarTitle("เดฟไปวัน ๆ")
         }
         .onAppear {

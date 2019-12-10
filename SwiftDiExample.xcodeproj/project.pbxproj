@@ -33,6 +33,8 @@
 		FB8A8BBE239FDBB3002E6E66 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8A8BBD239FDBB3002E6E66 /* ImageView.swift */; };
 		FB8A8BC0239FDCCF002E6E66 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8A8BBF239FDCCF002E6E66 /* ImageLoader.swift */; };
 		FB8A8BC523A00CD2002E6E66 /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = FB8A8BC423A00CD2002E6E66 /* feed.png */; };
+		FB8A8BC723A0107B002E6E66 /* ListSeparatorStyleNoneModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8A8BC623A0107B002E6E66 /* ListSeparatorStyleNoneModifier.swift */; };
+		FB8A8BCA23A010C2002E6E66 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8A8BC923A010C2002E6E66 /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		FB8A8BBF239FDCCF002E6E66 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		FB8A8BC223A00C3D002E6E66 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FB8A8BC423A00CD2002E6E66 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = feed.png; path = ../../../../Desktop/feed.png; sourceTree = "<group>"; };
+		FB8A8BC623A0107B002E6E66 /* ListSeparatorStyleNoneModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSeparatorStyleNoneModifier.swift; sourceTree = "<group>"; };
+		FB8A8BC923A010C2002E6E66 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 		FB2DFF91239E98FD00682E13 /* SwiftDiExample */ = {
 			isa = PBXGroup;
 			children = (
+				FB8A8BC823A010B2002E6E66 /* Extension */,
 				FB8A8BC1239FDD76002E6E66 /* Utils */,
 				FB8A8BBB239FDB9E002E6E66 /* View */,
 				FB2DFFB5239E99BC00682E13 /* Di */,
@@ -292,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				FB8A8BBD239FDBB3002E6E66 /* ImageView.swift */,
+				FB8A8BC623A0107B002E6E66 /* ListSeparatorStyleNoneModifier.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +316,14 @@
 				FB8A8BC423A00CD2002E6E66 /* feed.png */,
 			);
 			path = Screenshot;
+			sourceTree = "<group>";
+		};
+		FB8A8BC823A010B2002E6E66 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FB8A8BC923A010C2002E6E66 /* View+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +498,7 @@
 				FB2DFFC5239E9D1A00682E13 /* FeedRepository.swift in Sources */,
 				FB2DFFCC239E9FF800682E13 /* FeedViewModel.swift in Sources */,
 				FB8A8BC0239FDCCF002E6E66 /* ImageLoader.swift in Sources */,
+				FB8A8BCA23A010C2002E6E66 /* View+Extension.swift in Sources */,
 				FB2DFFC3239E9BBF00682E13 /* Feed.swift in Sources */,
 				FB2DFFC7239E9E6B00682E13 /* ContributorModule.swift in Sources */,
 				FB2DFFCE239EA91800682E13 /* FeedView.swift in Sources */,
@@ -493,6 +508,7 @@
 				FB2DFF93239E98FE00682E13 /* AppDelegate.swift in Sources */,
 				FB2DFFBC239E9A4200682E13 /* FeedDataSource.swift in Sources */,
 				FB2DFF95239E98FE00682E13 /* SceneDelegate.swift in Sources */,
+				FB8A8BC723A0107B002E6E66 /* ListSeparatorStyleNoneModifier.swift in Sources */,
 				FB2DFFBE239E9A5900682E13 /* FeedLocalDataSource.swift in Sources */,
 				FB8A8BBE239FDBB3002E6E66 /* ImageView.swift in Sources */,
 				FB2DFF97239E98FE00682E13 /* ContentView.swift in Sources */,
