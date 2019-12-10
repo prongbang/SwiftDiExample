@@ -4,4 +4,5 @@ SwiftUI + MVVM + Clean + DIKit + PromiseSwift Example
 
 
 ## Screenshot
-![screenshot png](https://github.com/prongbang/SwiftDiExample/Screenshot/blob/master/feed.png?raw=true)
+
+<img src="https://github.com/prongbang/SwiftDiExample/Screenshot/blob/master/feed.png?raw=true" style="width: 200px;"/>
