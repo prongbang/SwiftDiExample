@@ -32,6 +32,7 @@
 		FB8A8BBA239FD610002E6E66 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8A8BB9239FD610002E6E66 /* CardView.swift */; };
 		FB8A8BBE239FDBB3002E6E66 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8A8BBD239FDBB3002E6E66 /* ImageView.swift */; };
 		FB8A8BC0239FDCCF002E6E66 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8A8BBF239FDCCF002E6E66 /* ImageLoader.swift */; };
+		FB8A8BC523A00CD2002E6E66 /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = FB8A8BC423A00CD2002E6E66 /* feed.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		FB8A8BB9239FD610002E6E66 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FB8A8BBD239FDBB3002E6E66 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		FB8A8BBF239FDCCF002E6E66 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		FB8A8BC223A00C3D002E6E66 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FB8A8BC423A00CD2002E6E66 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = feed.png; path = ../../../../Desktop/feed.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 		FB2DFF86239E98FD00682E13 = {
 			isa = PBXGroup;
 			children = (
+				FB8A8BC323A00C9F002E6E66 /* Screenshot */,
+				FB8A8BC223A00C3D002E6E66 /* README.md */,
 				FB2DFF91239E98FD00682E13 /* SwiftDiExample */,
 				FB2DFFA8239E98FF00682E13 /* SwiftDiExampleTests */,
 				FB2DFF90239E98FD00682E13 /* Products */,
@@ -299,6 +304,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		FB8A8BC323A00C9F002E6E66 /* Screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				FB8A8BC423A00CD2002E6E66 /* feed.png */,
+			);
+			path = Screenshot;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -386,6 +399,7 @@
 				FB2DFF9F239E98FF00682E13 /* LaunchScreen.storyboard in Resources */,
 				FB2DFF9C239E98FF00682E13 /* Preview Assets.xcassets in Resources */,
 				FB2DFF99239E98FF00682E13 /* Assets.xcassets in Resources */,
+				FB8A8BC523A00CD2002E6E66 /* feed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
