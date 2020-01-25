@@ -16,4 +16,4 @@ jobs:
     # xcodebuild -scheme SwiftExample -workspace SwiftExample.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' build test
       run: xcodebuild test -scheme SwiftDiExampleTests -workspace SwiftDiExample.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3' -enableCodeCoverage YES
     - name: Coverage Report
-      run: bash <(curl -s https://codecov.io/bash) -J 'SwiftDiExample' 
+      run: bash <(curl -s https://codecov.io/bash) -t 5923d1b2-b6e3-4557-b39c-ae9429ca0f34
