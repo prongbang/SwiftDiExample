@@ -1,8 +1,6 @@
 #  SwiftDiExample
 
-[![Build Status](http://img.shields.io/travis/prongbang/SwiftDiExample.svg)](https://travis-ci.org/prongbang/SwiftDiExample)
-[![Codecov](https://img.shields.io/codecov/c/github/prongbang/SwiftDiExample.svg)](https://codecov.io/gh/prongbang/SwiftDiExample) 
-[![Go Report Card](https://goreportcard.com/badge/github.com/prongbang/SwiftDiExample)](https://goreportcard.com/report/github.com/prongbang/SwiftDiExample)
+[![Build Status](https://travis-ci.org/codecov/SwiftDiExample.svg)](https://travis-ci.org/codecov/SwiftDiExample) [![codecov.io](https://codecov.io/gh/codecov/SwiftDiExample/branch/master/graphs/badge.svg)](https://codecov.io/gh/codecov/SwiftDiExample/branch/master)
 
 SwiftUI + MVVM + Clean + DIKit + PromiseSwift Example
 
