@@ -27,6 +27,26 @@ class FeedViewModelTests: XCTestCase {
         XCTAssertFalse(self.feedViewModel?.isError ?? false)
     }
 
+    func testExecute_ShouldHas_WhenError() {
+        // Given
+        self.feedViewModel = FeedViewModel(getFeedListUseCase: MockErrorGetFeedListUseCase())
+        
+        // When
+        self.feedViewModel?.getFeedList()
+        
+        // Then
+        XCTAssert(waitForPromises(timeout: 10))
+        XCTAssertFalse(self.feedViewModel?.isLoading ?? false)
+        XCTAssertTrue(self.feedViewModel?.isError ?? true)
+    }
+}
+
+class MockErrorGetFeedListUseCase: GetFeedListUseCase {
+    func execute() -> Promise<Array<Feed>> {
+        return Promise {
+           throw PromiseError.validationFailure
+        }
+    }
 }
 
 class MockGetFeedListUseCase: GetFeedListUseCase {
