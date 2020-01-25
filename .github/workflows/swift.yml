@@ -7,13 +7,15 @@ jobs:
     name: Test
     runs-on: macOS-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: CocoaPod Install
-      run: pod install
-    - name: Force XCode 11
-      run: sudo xcode-select -switch /Applications/Xcode_11.3.app
-    - name: iPhone 11 Test
-    # xcodebuild -scheme SwiftExample -workspace SwiftExample.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' build test
-      run: xcodebuild test -scheme SwiftDiExampleTests -workspace SwiftDiExample.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3' -enableCodeCoverage YES
-    - name: Coverage Report
-      run: bash <(curl -s https://codecov.io/bash) -t 5923d1b2-b6e3-4557-b39c-ae9429ca0f34
+      - uses: actions/checkout@v1
+      - name: CocoaPod Install
+        run: pod install
+      - name: Force XCode 11
+        run: sudo xcode-select -switch /Applications/Xcode_11.3.app
+      - name: iPhone 11 Test
+      # xcodebuild -scheme SwiftExample -workspace SwiftExample.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' build test
+        run: xcodebuild test -scheme SwiftDiExampleTests -workspace SwiftDiExample.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3' -enableCodeCoverage YES
+      - name: Coverage Report
+        run: bash <(curl -s https://codecov.io/bash)
+        env: 
+          CODECOV_TOKEN: 5923d1b2-b6e3-4557-b39c-ae9429ca0f34
