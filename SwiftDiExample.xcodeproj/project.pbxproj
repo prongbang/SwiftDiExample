@@ -82,7 +82,6 @@
 		FB8A8BBD239FDBB3002E6E66 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		FB8A8BBF239FDCCF002E6E66 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		FB8A8BC223A00C3D002E6E66 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FB8A8BC423A00CD2002E6E66 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = feed.png; path = ../../../../Desktop/feed.png; sourceTree = "<group>"; };
 		FB8A8BC623A0107B002E6E66 /* ListSeparatorStyleNoneModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSeparatorStyleNoneModifier.swift; sourceTree = "<group>"; };
 		FB8A8BC923A010C2002E6E66 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
