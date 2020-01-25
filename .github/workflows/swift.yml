@@ -13,6 +13,8 @@ jobs:
     - name: Force XCode 11
       run: sudo xcode-select -switch /Applications/Xcode_11.3.app
     - name: iPhone 11 Test
+    # xcodebuild -scheme SwiftExample -workspace SwiftExample.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' build test
       run: |
         xcodebuild test -scheme SwiftDiExampleTests -workspace SwiftDiExample.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3' -enableCodeCoverage YES
-        bash <(curl -s https://codecov.io/bash)
+    - name: Coverage Report
+        bash <(curl -s https://codecov.io/bash) -X xcodellvm
