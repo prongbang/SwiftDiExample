@@ -14,5 +14,5 @@ jobs:
       run: sudo xcode-select -switch /Applications/Xcode_11.3.app
     - name: iPhone 11 Test
       run: |
-        xcodebuild test -scheme SwiftDiExampleTests -workspace SwiftDiExample.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3'
+        xcodebuild test -scheme SwiftDiExampleTests -workspace SwiftDiExample.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3' -enableCodeCoverage YES
         bash <(curl -s https://codecov.io/bash)
