@@ -1,6 +1,7 @@
 #  SwiftDiExample
 
-[![Build Status](https://travis-ci.org/prongbang/SwiftDiExample.svg)](https://travis-ci.org/prongbang/SwiftDiExample) [![codecov.io](https://codecov.io/gh/prongbang/SwiftDiExample/branch/master/graphs/badge.svg)](https://codecov.io/gh/prongbang/SwiftDiExample/branch/master)
+![Build Status](https://github.com/prongbang/SwiftDiExample/workflows/.github/workflows/swift.yml/badge.svg)
+[![codecov.io](https://codecov.io/gh/prongbang/SwiftDiExample/branch/master/graphs/badge.svg)](https://codecov.io/gh/prongbang/SwiftDiExample/branch/master)
 
 SwiftUI + MVVM + Clean + DIKit + PromiseSwift Example
 
