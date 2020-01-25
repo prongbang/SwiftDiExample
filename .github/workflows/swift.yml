@@ -6,16 +6,11 @@ jobs:
   test:
     name: Test
     runs-on: macOS-latest
-    
-    strategy:
-        matrix:
-          destination: ['platform=iOS Simulator,OS=13.2,name=iPhone X', 'platform=tvOS Simulator,OS=13.2,name=Apple TV 4K']
-    
     steps:
     - uses: actions/checkout@v1
-    - name: Build and Test
-      run: |
-        xcodebuild clean test -project SwiftDiExample.xcodeproj -scheme SwiftDiExample -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-        bash <(curl -s https://codecov.io/bash)
-      env: 
-       destination: ${{ matrix.destination }}
+    - name: CocoaPod Install
+      run: pod install
+    - name: Force XCode 11
+      run: sudo xcode-select -switch /Applications/Xcode_11.3.app
+    - name: iPhone 11 Test
+      run: xcodebuild test -scheme SwiftDiExampleTests -workspace SwiftDiExample.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3'
