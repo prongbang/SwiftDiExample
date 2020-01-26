@@ -27,7 +27,7 @@ class FeedViewModelTests: XCTestCase {
         XCTAssertFalse(self.feedViewModel?.isError ?? false)
     }
 
-    func testExecute_ShouldHas_WhenError() {
+    func testExecute_ShouldHasShowError_WhenValidationFailure() {
         // Given
         self.feedViewModel = FeedViewModel(getFeedListUseCase: MockErrorGetFeedListUseCase())
         
